@@ -1,25 +1,136 @@
-/*---------FONTE---------*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/*------------VARIÁVEIS GLOBAIS------------------*/
-:root {
-    --cor-primaria: #;
-    --cor-primaria-escura: #;
-    --cor-bg: #f5f7fa;
-    --cor-branco: #ffffff;
-    --cor-borda: #ddd;
-    --cor-sombra: rgba(0, 0, 0, 0.15);
-    --cor-texto: #333;
 
-    --fonte: 'Roboto', sans-serif;
+.playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
 
-    --raio: 0.8rem;
-    --transition: 0.3s ease;
+body{
+  background: #173de6;
+  background: linear-gradient(90deg, rgba(23, 61, 230, 1) 0%, rgba(33, 253, 29, 1) 51%, rgba(69, 246, 252, 1) 100%);
+}
+
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;   
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 185px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: clamp(2rem, 5vw, 3rem);
+    box-shadow: 0 8px 24px (--cor--sombra);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+#Entrar {
+    background-color: darkkhaki;
+    color: rgb(0, 0, 0);
+    width: 155px;
+    height: 45px;
+    border-radius: 7px 0 0 7px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+#cadastro {
+    background-color: darkkhaki;
+    color: rgb(0, 0, 0);
+    width: 155px;
+    height: 45px;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+
+#Entrar:hover, #cadastro:hover {
+   background-color: rgb(150, 146, 92);
 
 }
 
 
-*{
-    margin: 0;
-    padding: 0; 1
+#email, #senha {
+    border: 2px solid black;
+    display: block;
+    margin: 20px;
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.h2 {
+    width: 500px;   
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 185px;
+    text-align: center;
+}
+
+#adicionar{
+    background-color: darkkhaki;
+    color: rgb(0, 0, 0);
+    width: 155px;
+    height: 45px;
+    border-bottom-right-radius: 7px; 
+    border-top-right-radius: 7px;
+    cursor: pointer;
+} 
+
+#sair {
+    background-color: rgb(255, 36, 36);
+    width: 90px;
+    height: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+}
+#titulo {
+    margin-top: 15px;
+}
+
+#item {
+    width: 155px;   
+    height: 40px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+#adicionar:hover{
+    background-color:  rgb(150, 146, 92);
+}
+
+#sair:hover{
+    background-color: rgb(197, 10, 10);
+}
+
+.titulo {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+    color: var(--cor-texto);
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    
 }
